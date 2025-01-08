@@ -1,0 +1,152 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full height for the HTML element */
+html {
+  height: 100%;
+}
+
+/* Center the main content and apply background color */
+body {
+  height: 100%;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the main container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+/* Flex container for the four boxes */
+.four-area {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Main heading text */
+.main-text {
+  font-size: 1.6875rem;
+}
+
+/* Subheading text with bold styling */
+.sub-text {
+  font-size: 1.6875rem;
+  font-weight: 600;
+}
+
+/* Paragraph providing example or description */
+.ex-paragraph {
+  font-size: 0.84375rem;
+  width: 34rem;
+  text-align: center;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Box styles with unique border-top colors */
+.info-box1,
+.info-box2,
+.info-box3,
+.info-box4 {
+  width: 17rem;
+  height: 12rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  border-radius: 5px;
+}
+
+.info-box1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.info-box2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.info-box3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.info-box4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/* Vertical layout for text inside boxes */
+.ver-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+/* Image or illustration placement within the box */
+.drawing {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+/* Bold heading text inside the info boxes */
+.adj-word {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1.5rem 0.75rem 0 0.75rem;
+}
+
+/* Smaller descriptive text inside the info boxes */
+.meaning {
+  font-size: 12px;
+  padding: 0.75rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  /* Adjust height for content to fit naturally */
+  html {
+    height: fit-content;
+  }
+
+  /* Adjust main container layout for small screens */
+  main {
+    padding-top: 1rem;
+    text-align: center;
+    width: 20rem;
+  }
+
+  /* Stack boxes vertically */
+  .four-area {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Resize main heading for smaller screens */
+  .main-text {
+    font-size: 1.3rem;
+  }
+
+  /* Resize subheading for smaller screens */
+  .sub-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  /* Adjust paragraph size and width for small screens */
+  .ex-paragraph {
+    font-size: 0.65rem;
+    width: 13rem;
+  }
+}
