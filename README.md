@@ -2,15 +2,6 @@
 
 This project consists of a responsive layout built with **HTML** and **CSS**. It showcases a clean, minimalistic design with a focus on typography and box elements. The layout is fully responsive, ensuring it adapts well to various screen sizes, including mobile devices.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
-- [How to Use](#how-to-use)
-- [Responsive Design](#responsive-design)
-
----
 
 ## Project Overview
 
@@ -36,8 +27,3 @@ The design is clean and organized, prioritizing readability and aesthetics.
 
 - **HTML5**: To structure the webpage.
 - **CSS3**: To style the elements and handle the responsive design.
-
----
-
-## Folder Structure
-
